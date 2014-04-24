@@ -1,0 +1,82 @@
+// Utilities
+.marginAndPadding(30);
+.fontSizeLoop(20);
+.widthSizeLoop(400, 50);
+.widthSizeLoop(200, 5);
+
+.italic {font-style: italic;}
+.bold {font-weight: bold;}
+.valignT {vertical-align: top;}
+.valignT-ipt {vertical-align: top!important;}
+.valignM {vertical-align: middle;}
+.valignB {vertical-align: bottom;}
+
+.text-left   {text-align: left;}
+.text-right  {text-align: right;}
+.text-center   {text-align: center;}
+.text-justify  {text-align: justify;}
+.text-left-ipt   {text-align: left !important;}
+.text-right-ipt  {text-align: right !important;}
+.text-center-ipt   {text-align: center !important;}
+.text-justify-ipt  {text-align: justify!important;}
+.underline {text-decoration: underline;}
+
+.inline-block {
+  display: inline-block;
+}
+.block, .show {
+  display: block;
+}
+.block-ipt {
+  display: block!important;
+}
+// Toggling content
+.hide-ipt {
+  display: none!important;
+}
+.show-ipt {
+  display: block!important;
+}
+
+// Visibility
+.invisible-ipt {
+  visibility: hidden!important;
+}
+.visible {
+  overflow: visible;
+}
+
+.full {
+	width: 100%;
+}
+
+// Examples
+.show-grid {
+	margin-bottom: 10px;
+	> div {
+		background-color: #8578d4;
+		border: 1px solid #000;
+		padding-bottom: 5px;
+		padding-top: 5px;
+		> span {
+			background-color: #9cd5ec;
+			display: block;
+			width: 100%;
+		}
+	}
+}
+
+.green {
+	color: @greenPrimary;
+}
+.strike {
+	text-decoration: line-through;
+}
+.text-gray-666 {
+	color: #666;
+}
+
+.clear {
+	width: 100%;
+	clear: both;
+}
