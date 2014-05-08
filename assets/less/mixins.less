@@ -7,7 +7,7 @@
 #liquidLayout() {
     // TODO: _Layout 2 colum : Fixed - Fluid
     .fixedFluid(@widthFixed, @mgLeftFluid: 0, @fixedClass: fixed-colum, @fluidClass: fluid-colum, @innerFluidClass: inner){
-        
+
         > .@{fluidClass}{
             float: left;
             width: 100%;
@@ -16,12 +16,12 @@
             }
             + .@{fixedClass}{
                 float: left;
-                margin-left: -100%; 
+                margin-left: -100%;
                 width: @widthFixed;
             }
         }
     }
-    
+
     // TODO: _Layout 2 Colum: Fluid - Fixed
     .fluidFixed(@widthFixed, @mgLeftFluid: 0, @fluidClass: fluid-colum, @fixedClass: fixed-colum, @innerFluidClass: inner){
         > .@{fluidClass}{
@@ -37,7 +37,7 @@
             }
         }
     }
-    
+
     // TODO: _Layout 3 Colum Fixed - Fluid - Fixed
     .fixedFluidFixed(@widthFixedLeft, @widthFixedRight,  @mgLeftOfCenterFluid: 0, @mgRightOfCenterFluid: 0, @leftFixedClass: left-fixed-colum, @fluidClass: fluid-colum, @rightFixedClass: right-fixed-colum, @innerFluidClass: inner){
         .clearfix;
@@ -60,7 +60,7 @@
             width: @widthFixedRight;
         }
     }
-    
+
     // TODO: _Layout 3 Colum Fluid - Fluid - Fixed
     .fluidFluidFixed(@widthFluidCenter, @widthFixedRight, @leftFluidClass: left-fluid-colum, @centerFluidClass: center-fluid-colum, @rightFixedClass: fixed-colum, @innerClass: inner){
         > .@{leftFluidClass}{
@@ -180,14 +180,14 @@
             }
         }
     }
-    
+
     .fluidFixed(@fixedWidth, @space: @gridGutterWidth, @fixedName: fixed-colum, @fluidName: fluid-colum){
         .@{fixedName}{
             float: right;
             width: @fixedWidth;
             + .@{fluidName} {
                 margin-right: @fixedWidth + @space;
-            } 
+            }
         }
     }
     .fluidFixedOverflow(@fixedWidth, @space: @gridGutterWidth, @fixedName: fixed-colum, @fluidName: fluid-colum){
@@ -197,7 +197,7 @@
             margin-left: @space;
             + .@{fluidName} {
                 overflow: hidden;
-            } 
+            }
         }
     }
 }
@@ -349,7 +349,7 @@
             // your resulting css
             font-size: ~"@{index}px";
         }
-        
+
         .f-@{index}-ipt {
             // your resulting css
             font-size: ~"@{index}px"!important;
@@ -372,7 +372,7 @@
             // your resulting css
             width: ~"@{index}px";
         }
-        
+
         .w@{index}-ipt {
             // your resulting css
             width: ~"@{index}px"!important;
@@ -397,6 +397,12 @@
     padding-right: 0;
     padding-bottom: 0;
   }
+}
+
+.border-radius(@radius) {
+    -moz-border-radius: @radius;
+    -webkit-border-radius: @radius;
+    border-radius: @radius;
 }
 
 //= Set Link color
